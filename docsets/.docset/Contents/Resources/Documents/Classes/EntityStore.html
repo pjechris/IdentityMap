@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EntityStore Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EntityStore" class="dashAnchor"></a>
+    <a title="EntityStore Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        CohesionKit.EntityStore Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EntityStore.html">EntityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Subscription.html">Subscription</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/StampError.html">StampError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:11CohesionKit14AliasContainerV">AliasContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:11CohesionKit10EntityNodeC">EntityNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Aggregate.html">Aggregate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EntityWrapper.html">EntityWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AliasKey.html">AliasKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntityObserver.html">EntityObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PartialIdentifiableKeyPath.html">PartialIdentifiableKeyPath</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11CohesionKit17EntityEnumWrappera">EntityEnumWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11CohesionKit11IdentityMapa">IdentityMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EntityStore</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EntityStore</span></code></pre>
+
+                </div>
+              </div>
+            <p>Manages entities lifecycle and synchronisation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6Updatea"></a>
+                    <a name="//apple_ref/swift/Alias/Update" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6Updatea">Update</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">(</span><span class="k">inout</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC5queue6loggerACSo012OS_dispatch_E0CSg_AA6Logger_pSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(queue:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC5queue6loggerACSo012OS_dispatch_E0CSg_AA6Logger_pSgtcfc">init(queue:<wbr>logger:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new EntityStore instance optionally with a queue and a logger</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Logger.html">Logger</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the queue on which to receive updates. If nil identitymap will create its own.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logger</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a logger to follow/debug identity internal state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC5store6entity5named10modifiedAt9ifPresentAA0C8ObserverVyxGx_AA8AliasKeyVyxGSgSdSgyxzcSgts12IdentifiableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/store(entity:named:modifiedAt:ifPresent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC5store6entity5named10modifiedAt9ifPresentAA0C8ObserverVyxGx_AA8AliasKeyVyxGSgSdSgyxzcSgts12IdentifiableRzlF">store(entity:<wbr>named:<wbr>modifiedAt:<wbr>ifPresent:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store an entity in the storage. Entity will be stored only if stamp (<code>modifiedAt</code>) is higher than in previous
+insertion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Identifiable</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="nv">entity</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+    <span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">ifPresent</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the element to store in the identity map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>named</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an alias to reference the entity and retrieve it using it</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>modifiedAt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>if entity was already stored it will be used to determine if the  update should be  applied or discarded</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ifPresent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>applies the closure before storing it if it&rsquo;s already been stored. In this case this is similar as
+calling <code>update</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an object to observe changes on the entity</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC5store6entity5named10modifiedAt9ifPresentAA0C8ObserverVyxGx_AA8AliasKeyVyxGSgSdSgyxzcSgtAA9AggregateRzlF"></a>
+                    <a name="//apple_ref/swift/Method/store(entity:named:modifiedAt:ifPresent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC5store6entity5named10modifiedAt9ifPresentAA0C8ObserverVyxGx_AA8AliasKeyVyxGSgSdSgyxzcSgtAA9AggregateRzlF">store(entity:<wbr>named:<wbr>modifiedAt:<wbr>ifPresent:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store an aggregate in the storage. Each aggregate entities will be stored only if stamp (<code>modifiedAt</code>) is higher than in previous
+insertion. Finally aggregate will be stored accordingly to each of its entities.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Aggregate.html">Aggregate</a></span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="nv">entity</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+    <span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="n">ifPresent</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the aggregate to store in the identity map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>named</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an alias to reference the aggregate and retrieve it using it</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>modifiedAt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>if aggregate was already stored it will be used to determine if the  update should be  applied or discarded</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ifPresent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>applies the closure before storing it if it&rsquo;s already been stored. In this case this is similar as
+calling <code>update</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an object to observe changes on the entity</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC5store8entities5named10modifiedAtAA0C8ObserverVySay7ElementQzGGx_AA8AliasKeyVyxGSgSdSgtSlRzs12IdentifiableAKRQlF"></a>
+                    <a name="//apple_ref/swift/Method/store(entities:named:modifiedAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC5store8entities5named10modifiedAtAA0C8ObserverVySay7ElementQzGGx_AA8AliasKeyVyxGSgSdSgtSlRzs12IdentifiableAKRQlF">store(entities:<wbr>named:<wbr>modifiedAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store multiple entities at once</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">C</span><span class="p">:</span> <span class="kt">Collection</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">entities</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC5store8entities5named10modifiedAtAA0C8ObserverVySay7ElementQzGGx_AA8AliasKeyVyxGSgSdSgtSlRzAA9AggregateAKRQlF"></a>
+                    <a name="//apple_ref/swift/Method/store(entities:named:modifiedAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC5store8entities5named10modifiedAtAA0C8ObserverVySay7ElementQzGGx_AA8AliasKeyVyxGSgSdSgtSlRzAA9AggregateAKRQlF">store(entities:<wbr>named:<wbr>modifiedAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>store multiple aggregates at once</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">C</span><span class="p">:</span> <span class="kt">Collection</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">entities</span><span class="p">:</span> <span class="kt">C</span><span class="p">,</span> <span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Aggregate.html">Aggregate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC4find_2idAA0C8ObserverVyxGSgxm_2IDQzts12IdentifiableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/find(_:id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC4find_2idAA0C8ObserverVyxGSgxm_2IDQzts12IdentifiableRzlF">find(_:<wbr>id:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Try to find an entity/aggregate in the storage.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">find</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the entity type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the entity id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>nil if not found, an <code><a href="../Structs/EntityObserver.html">EntityObserver</a></code>` otherwise</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC4find5namedAA0C8ObserverVyxSgGAA8AliasKeyVyxG_ts12IdentifiableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/find(named:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC4find5namedAA0C8ObserverVyxSgGAA8AliasKeyVyxG_ts12IdentifiableRzlF">find(named:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Try to find an entity/aggregate registered under <code>named</code> alias</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">find</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="p">?</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>named</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the alias to look for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC4find5namedAA0C8ObserverVyxSgGAA8AliasKeyVyxG_tSlRzlF"></a>
+                    <a name="//apple_ref/swift/Method/find(named:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC4find5namedAA0C8ObserverVyxSgGAA8AliasKeyVyxG_tSlRzlF">find(named:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Try to find a collected registered under <code>named</code> alias</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">find</span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/EntityObserver.html">EntityObserver</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="p">?</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">Collection</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an observer returning the alias value. Note that the value will be an Array</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Update"></a>
+                <a name="//apple_ref/swift/Section/Update" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Update"></a>
+                  <h3 class="section-name"><span>Update</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update_2id10modifiedAtADSbxm_2IDQzSdSgyxzXEts12IdentifiableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:id:modifiedAt:update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update_2id10modifiedAtADSbxm_2IDQzSdSgyxzXEts12IdentifiableRzlF">update(_:<wbr>id:<wbr>modifiedAt:<wbr>update:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already stored</strong> entity using a closure. Useful to update a few properties or when you assume the entity
+should already be stored.
+Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update_2id10modifiedAt_Sbxm_2IDQzSdSgyxzXEtAA9AggregateRzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:id:modifiedAt:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update_2id10modifiedAt_Sbxm_2IDQzSdSgyxzXEtAA9AggregateRzlF">update(_:<wbr>id:<wbr>modifiedAt:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already stored</strong> alias using a closure. This is useful if you don&rsquo;t have a full entity for update
+but just a few attributes/modifications.
+Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Aggregate.html">Aggregate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEts12IdentifiableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(named:modifiedAt:update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEts12IdentifiableRzlF">update(named:<wbr>modifiedAt:<wbr>update:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already stored</strong> alias using a closure.
+Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtAA9AggregateRzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(named:modifiedAt:update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtAA9AggregateRzlF">update(named:<wbr>modifiedAt:<wbr>update:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already stored</strong> alias using a closure.
+Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Aggregate.html">Aggregate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtSlRzs12Identifiable7ElementRpzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(named:modifiedAt:update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtSlRzs12Identifiable7ElementRpzlF">update(named:<wbr>modifiedAt:<wbr>update:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already existing</strong> collection alias content
+Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">C</span><span class="p">:</span> <span class="kt">Collection</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtSlRzAA9Aggregate7ElementRpzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(named:modifiedAt:update:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC6update5named10modifiedAtADSbAA8AliasKeyVyxG_SdSgyxzXEtSlRzAA9Aggregate7ElementRpzlF">update(named:<wbr>modifiedAt:<wbr>update:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an <strong>already existing</strong> collection alias content
+ Note: the closure is evaluated before checking <code>modifiedAt</code>. As such the closure execution does not mean
+the change was applied</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">C</span><span class="p">:</span> <span class="kt">Collection</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">update</span><span class="p">:</span> <span class="kt"><a href="../Classes/EntityStore.html#/s:11CohesionKit11EntityStoreC6Updatea">Update</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">C</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Aggregate.html">Aggregate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if entity exists and might be updated, false otherwise. The update might <strong>not</strong> be applied if modifiedAt is too old</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Delete"></a>
+                <a name="//apple_ref/swift/Section/Delete" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Delete"></a>
+                  <h3 class="section-name"><span>Delete</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC11removeAlias5namedyAA0F3KeyVyxG_tlF"></a>
+                    <a name="//apple_ref/swift/Method/removeAlias(named:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC11removeAlias5namedyAA0F3KeyVyxG_tlF">removeAlias(named:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes an alias from the storage</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">removeAlias</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC11removeAlias5namedyAA0F3KeyVyxG_tSlRzlF"></a>
+                    <a name="//apple_ref/swift/Method/removeAlias(named:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC11removeAlias5namedyAA0F3KeyVyxG_tSlRzlF">removeAlias(named:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes an alias from the storage</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">removeAlias</span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="kt"><a href="../Structs/AliasKey.html">AliasKey</a></span><span class="o">&lt;</span><span class="kt">C</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">where</span> <span class="kt">C</span> <span class="p">:</span> <span class="kt">Collection</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC14removeAllAliasyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAllAlias()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC14removeAllAliasyyF">removeAllAlias()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all alias from identity map</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllAlias</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11CohesionKit11EntityStoreC9removeAllyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11CohesionKit11EntityStoreC9removeAllyyF">removeAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all alias AND all objects stored weakly. You should not need this method and rather use <code>removeAlias</code>.
+But this can be useful if you fear retain cycles</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

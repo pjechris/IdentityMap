@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Index  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="Index  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Index</a>
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EntityStore.html">EntityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Subscription.html">Subscription</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/StampError.html">StampError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:11CohesionKit14AliasContainerV">AliasContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:11CohesionKit10EntityNodeC">EntityNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Aggregate.html">Aggregate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EntityWrapper.html">EntityWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AliasKey.html">AliasKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EntityObserver.html">EntityObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PartialIdentifiableKeyPath.html">PartialIdentifiableKeyPath</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11CohesionKit17EntityEnumWrappera">EntityEnumWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11CohesionKit11IdentityMapa">IdentityMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='cohesionkit-single-source-of-truth' class='heading'>CohesionKit - Single Source of Truth</h1>
+
+<p>
+  <img alt="swift" src="https://img.shields.io/badge/Swift-5.6%2B-orange?logo=swift&logoColor=white"/>
+  <img alt="platforms" src="https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-lightgrey" />
+  <img alt="test" src="https://github.com/pjechris/CohesionKit/actions/workflows/test.yml/badge.svg" />
+  <a href="https://twitter.com/pjechris">
+    <img alt="twitter" src="https://img.shields.io/badge/follow-pjechris-1DA1F2?logo=twitter&logoColor=white" />
+  </a>
+</p>
+
+<p>Keep your models synchronized in your app and never have any inconsistency anymore. Designed using latest Swift features.</p>
+<h2 id='why-using-cohesionkit' class='heading'>Why using CohesionKit?</h2>
+
+<ul>
+<li>🔁 You need realtime synchronisation (websockets)</li>
+<li>🌐 You have multiple data sources (REST, CoreData, websocket, phone Contacts, Google Maps, etc&hellip;)</li>
+<li>🪶 You look for a full Swift lightweight tool</li>
+<li>🗃️ You want to use structs</li>
+</ul>
+<h3 id='features' class='heading'>Features</h3>
+
+<ul>
+<li>[x] 🦺 Thread safe</li>
+<li>[x] 🪶 Lighweight (&lt; 600 lines of code)</li>
+<li>[x] 🪪 Working with plain Swift <code>struct</code> and <code>Identifiable</code> objects</li>
+<li>[x] 🔀 Support for Combine</li>
+<li>[x] 🧠 In-memory storage</li>
+<li>[x] 🐾 Low memory footprint</li>
+<li>[x] 🐪 Strongly typed</li>
+</ul>
+<h3 id='where-to-put-cohesionkit-in-my-stack' class='heading'>Where to put CohesionKit in my stack?</h3>
+
+<p>CohesionKit being a Single Source of Truth solution it handles your objects lifecycle and synchronization from <em>any</em> source.</p>
+
+<p>You should put CohesionKit in front of your data sources (REST API, GraphQL, &hellip;) before returning data to your app.</p>
+<pre class="highlight plaintext"><code>sequenceDiagram
+    autonumber
+
+        YourApp -&gt;&gt;DataSource: findBooks
+        DataSource -&gt;&gt;GraphQL: query findBooks
+        GraphQL --&gt;&gt;DataSource: FindBooksQueryResult
+        DataSource -&gt;&gt;CohesionKit: store books [A,B,C]
+        CohesionKit --&gt;&gt; YourApp: Publisher&lt;[A,B,C]&gt;
+
+        WebSocket -&gt;&gt; WebSocketListener: book A updated
+        WebSocketListener -&gt;&gt; CohesionKit: update book A
+        CohesionKit --&gt;&gt; YourApp: Publisher&lt;[A,B,C]&gt;
+</code></pre>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<ul>
+<li>Swift Package Manager</li>
+</ul>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/pjechris/CohesionKit.git"</span><span class="p">,</span> <span class="o">.</span><span class="nf">upToNextMajor</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"0.7.0"</span><span class="p">))</span>
+<span class="p">]</span>
+</code></pre>
+<h2 id='examples' class='heading'>Examples</h2>
+
+<p>Library comes with an <a href="https://github.com/pjechris/CohesionKit/tree/main/Example">example project</a> so you can see a real case usage. It mostly shows:</p>
+
+<ul>
+<li>How to store data in the library</li>
+<li>How to retrieve and update that data for realtime</li>
+<li>How data is synchronised throughout multiple screens</li>
+</ul>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+<h3 id='storing-an-object' class='heading'>Storing an object</h3>
+
+<p>First create an instance of <code><a href="Classes/EntityStore.html">EntityStore</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">entityStore</span> <span class="o">=</span> <span class="kt">EntityStore</span><span class="p">()</span>
+</code></pre>
+
+<p><code><a href="Classes/EntityStore.html">EntityStore</a></code> let you store <code>Identifiable</code> objects:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Book</span><span class="p">:</span> <span class="kt">Identifiable</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span>
+  <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">book</span> <span class="o">=</span> <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ABCD"</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="s">"My Book"</span><span class="p">)</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+</code></pre>
+
+<p>Then You can retrieve the object from anywhere in your code:</p>
+<pre class="highlight swift"><code><span class="c1">// somewhere else in the code</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ABCD"</span><span class="p">)</span> <span class="c1">// return Book(id: "ABCD", name: "My Book")</span>
+</code></pre>
+<h3 id='observing-changes' class='heading'>Observing changes</h3>
+
+<p>Every time data is updated in <code><a href="Classes/EntityStore.html">EntityStore</a></code> triggers a notification to any registered observer. To register yourself as an observer just use result from <code>store</code> or <code>find</code> methods:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">findBooks</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kd">some</span> <span class="kt">Publisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Book</span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="c1">// 1. load data using URLSession</span>
+  <span class="kt">URLSession</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+  <span class="c1">// 2. store data inside our entityStore</span>
+    <span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="n">entityStore</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">sink</span> <span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+    <span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">cancellables</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)?</span>
+  <span class="o">.</span><span class="n">asPublisher</span>
+  <span class="o">.</span><span class="n">sink</span><span class="err"> </span><span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+  <span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">cancellables</span><span class="p">)</span>
+</code></pre>
+
+<blockquote>
+<p>CohesionKit has a <a href="#weak-memory-management">weak memory policy</a> you should read about. As such, returned value from entityStore.store must be strongly retained to not lose value.</p>
+
+<p>For brievety, next examples will omit <code>.sink { ... }.store(in:&amp;cancellables)</code>.</p>
+</blockquote>
+<h3 id='relational-objects' class='heading'>Relational objects</h3>
+
+<p>To store objects containing nested identity objects you need to make them conform to one protocol: <code><a href="Protocols/Aggregate.html">Aggregate</a></code>.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">AuthorBooks</span><span class="p">:</span> <span class="kt">Aggregate</span> <span class="p">{</span>
+  <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Author</span><span class="o">.</span><span class="kt">ID</span> <span class="p">{</span><span class="err"> </span><span class="n">author</span><span class="o">.</span><span class="n">id</span> <span class="p">}</span>
+
+  <span class="k">var</span> <span class="nv">author</span><span class="p">:</span> <span class="kt">Author</span>
+  <span class="k">var</span> <span class="nv">books</span><span class="p">:</span> <span class="p">[</span><span class="kt">Book</span><span class="p">]</span>
+
+  <span class="c1">// `nestedEntitiesKeyPaths` must list all Identifiable/Aggregate this object contain</span>
+  <span class="k">var</span> <span class="nv">nestedEntitiesKeyPaths</span><span class="p">:</span> <span class="p">[</span><span class="kt">PartialIdentifiableKeyPath</span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">{</span>
+    <span class="p">[</span><span class="o">.</span><span class="nf">init</span><span class="p">(\</span><span class="o">.</span><span class="n">author</span><span class="p">),</span> <span class="o">.</span><span class="nf">init</span><span class="p">(\</span><span class="o">.</span><span class="n">books</span><span class="p">)]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>CohesionKit then handles synchronisation for the three entities:</p>
+
+<ul>
+<li>AuthorBook</li>
+</ul><div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Author
+
+</div><ul>
+<li>Book</li>
+</ul>
+
+<blockquote>
+<p>Only writable keypath are accepted. Using a KeyPath (let) will result in error: &ldquo;Key path value type KeyPath<XX> cannot be converted to contextual type WritableKeyPath<XX>&rdquo;</p>
+</blockquote>
+
+<p>This gives you the ability to retrieve them independently from each other:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">authorBooks</span> <span class="o">=</span> <span class="kt">AuthorBooks</span><span class="p">(</span>
+    <span class="nv">author</span><span class="p">:</span> <span class="kt">Author</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="s">"George R.R Martin"</span><span class="p">),</span>
+    <span class="nv">books</span><span class="p">:</span> <span class="p">[</span>
+      <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"A Clash of Kings"</span><span class="p">),</span>
+      <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ADD"</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"A Dance with Dragons"</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">authorBooks</span><span class="p">)</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Author</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// George R.R Martin</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">)</span> <span class="c1">// A Clash of Kings</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ADD"</span><span class="p">)</span> <span class="c1">// A Dance with Dragons</span>
+</code></pre>
+
+<p>You can also modify any of them however you want. Notice the change is visible from the object itself AND from aggregate objects:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">newAuthor</span> <span class="o">=</span> <span class="kt">Author</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="s">"George R.R MartinI"</span><span class="p">)</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">newAuthor</span><span class="p">)</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Author</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// George R.R MartinI</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">AuthorBooks</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// George R.R MartinI + [A Clash of Kings, A Dance with Dragons]</span>
+</code></pre>
+
+<blockquote>
+<p>You might think about storing books on <code>Author</code> directly (<code>author.books</code>). In this case <code>Author</code> needs to implement <code><a href="Protocols/Aggregate.html">Aggregate</a></code> and declare <code>books</code> as nested entity.</p>
+
+<p>However I strongly advise you to not nest <code>Identifiable</code> objects into other <code>Identifiable</code> objects. Read <a href="https://swiftunwrap.com/article/modeling-done-right/">Handling relationships</a> article if you want to know more about this subject.</p>
+</blockquote>
+<h3 id='storing-vs-updating' class='heading'>Storing vs Updating</h3>
+
+<p>For now we only focused on <code>entityStore.store</code> but CohesionKit comes with another method to store data: <code>entityStore.update</code>.</p>
+
+<p>Sometimes both can be used but they each have a different purpose:</p>
+
+<ol>
+<li><code>store</code> is suited for storing full data retrieved from webservices, like <code>GET /user</code> for instance</li>
+<li><code>update</code> is usually used for partial data. It&rsquo;s also the preferred method when receiving events from websockets.</li>
+</ol>
+<h2 id='advanced-topics' class='heading'>Advanced topics</h2>
+<h3 id='enum-support' class='heading'>Enum support</h3>
+
+<p>Starting with 0.13 library has support for enum types. Note that you&rsquo;ll need to conform to <code><a href="Protocols/EntityWrapper.html">EntityWrapper</a></code> and provide computed getter/setter for each entity you&rsquo;d like to store.</p>
+<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">MediaType</span><span class="p">:</span> <span class="kt">EntityWrapper</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="nf">book</span><span class="p">(</span><span class="kt">Book</span><span class="p">)</span>
+  <span class="k">case</span> <span class="nf">game</span><span class="p">(</span><span class="kt">Game</span><span class="p">)</span>
+  <span class="k">case</span> <span class="nf">tvShow</span><span class="p">(</span><span class="kt">TvShow</span><span class="p">)</span>
+
+  <span class="kd">func</span> <span class="n">wrappedEntitiesKeyPaths</span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span><span class="p">(</span><span class="n">relativeTo</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="k">Self</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">PartialIdentifiableKeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">{</span>
+    <span class="p">[</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="nf">appending</span><span class="p">(\</span><span class="o">.</span><span class="n">book</span><span class="p">)),</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="nf">appending</span><span class="p">(\</span><span class="o">.</span><span class="n">game</span><span class="p">)),</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="nf">appending</span><span class="p">(\</span><span class="o">.</span><span class="n">tvShow</span><span class="p">))]</span>
+  <span class="p">}</span>
+
+  <span class="k">var</span> <span class="nv">book</span><span class="p">:</span> <span class="kt">Book</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="k">set</span> <span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">var</span> <span class="nv">game</span><span class="p">:</span> <span class="kt">Game</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="k">set</span> <span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">var</span> <span class="nv">tvShow</span><span class="p">:</span> <span class="kt">TvShow</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="k">set</span> <span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">AuthorMedia</span><span class="p">:</span> <span class="kt">Aggregate</span> <span class="p">{</span>
+  <span class="k">var</span> <span class="nv">author</span><span class="p">:</span> <span class="kt">Author</span>
+  <span class="k">var</span> <span class="nv">media</span><span class="p">:</span> <span class="kt">MediaType</span>
+
+  <span class="k">var</span> <span class="nv">nestedEntitiesKeyPaths</span><span class="p">:</span> <span class="p">[</span><span class="kt">PartialIdentifiableKeyPath</span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">{</span>
+    <span class="p">[</span><span class="o">.</span><span class="nf">init</span><span class="p">(\</span><span class="o">.</span><span class="n">author</span><span class="p">),</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">wrapper</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">media</span><span class="p">)]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='aliases' class='heading'>Aliases</h3>
+
+<p>Sometimes you need to retrieve data without knowing the object id. Common case is current user.</p>
+
+<p>CohesionKit provides a suitable mechanism: aliases. Aliases allow you to register and find entities using a key.</p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AliasKey</span> <span class="k">where</span> <span class="kt">T</span> <span class="o">==</span> <span class="kt">User</span> <span class="p">{</span>
+  <span class="kd">static</span> <span class="k">let</span> <span class="nv">currentUser</span> <span class="o">=</span> <span class="kt">AliasKey</span><span class="p">(</span><span class="s">"user"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">currentUser</span><span class="p">,</span> <span class="nv">named</span><span class="p">:</span> <span class="o">.</span><span class="n">currentUser</span><span class="p">)</span>
+</code></pre>
+
+<p>Then request it somewhere else:</p>
+<pre class="highlight swift"><code><span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="o">.</span><span class="n">currentUser</span><span class="p">)</span> <span class="c1">// return the current user</span>
+</code></pre>
+
+<p>Compared to regular entities, aliased objects are long-live objects: they will be kept in the storage <strong>even if no one observes them</strong>. This allow registered observers to be notified when alias value change:</p>
+<pre class="highlight swift"><code><span class="n">entityStore</span><span class="o">.</span><span class="nf">removeAlias</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="o">.</span><span class="n">currentUser</span><span class="p">)</span> <span class="c1">// observers will be notified currentUser is nil.</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">newCurrentUser</span><span class="p">,</span> <span class="nv">named</span><span class="p">:</span> <span class="o">.</span><span class="n">currentUser</span><span class="p">)</span> <span class="c1">// observers will be notified that currentUser changed even if currentUser was nil before</span>
+</code></pre>
+<h3 id='stale-data' class='heading'>Stale data</h3>
+
+<p>When storing data CohesionKit actually require you to set a modification stamp on it. <code><a href="Typealiases.html#/s:11CohesionKit5Stampa">Stamp</a></code> is used as a marker to compare data freshness: the higher stamp is the more recent data is.</p>
+
+<p>By default CohesionKit will use the current date as stamp.</p>
+<pre class="highlight swift"><code><span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">)</span> <span class="c1">// use default stamp: current date</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">()</span><span class="o">.</span><span class="n">stamp</span><span class="p">)</span> <span class="c1">// explicitly use Date time stamp</span>
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="mi">9000</span><span class="p">)</span> <span class="c1">// any Double value is valid</span>
+</code></pre>
+
+<p>If for some reason you try to store data with a stamp lower than the already stamped stored data then the update will be discarded.</p>
+<h3 id='weak-memory-management' class='heading'>Weak memory management</h3>
+
+<p>CohesionKit has a weak memory policy: objects are kept in <code><a href="Classes/EntityStore.html">EntityStore</a></code> as long as someone use them.</p>
+
+<p>To that end you need to retain observers as long as you&rsquo;re interested in the data:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">book</span> <span class="o">=</span> <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"A Clash of Kings"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">cancellable</span> <span class="o">=</span> <span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">)</span> <span class="c1">// observer is retained: data is retained</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">)</span> <span class="c1">// return  "A Clash of Kings"</span>
+</code></pre>
+
+<p>If you don&rsquo;t create/retain observers then once entities have no more observers they will be automatically discarded from the storage.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">book</span> <span class="o">=</span> <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"A Clash of Kings"</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">)</span> <span class="c1">// observer is not retained and no one else observe this book: data is released</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">)</span> <span class="c1">// return nil</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">book</span> <span class="o">=</span> <span class="kt">Book</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"A Clash of Kings"</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">cancellable</span> <span class="o">=</span> <span class="n">entityStore</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">book</span><span class="p">)</span><span class="o">.</span><span class="n">asPublisher</span><span class="o">.</span><span class="n">sink</span> <span class="p">{</span><span class="err"> </span><span class="o">...</span> <span class="p">}</span>
+<span class="k">let</span> <span class="nv">cancellable2</span> <span class="o">=</span> <span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">)</span> <span class="c1">// return a publisher</span>
+
+<span class="n">cancellable</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="n">entityStore</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="kt">Book</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="s">"ACK"</span><span class="p">)</span> <span class="c1">// return "A Clash of Kings" because cancellable2 still observe this book</span>
+</code></pre>
+<h1 id='license' class='heading'>License</h1>
+
+<p>This project is released under the MIT License. Please see the LICENSE file for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
